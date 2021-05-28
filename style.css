@@ -11,6 +11,7 @@ body {
   background: whitesmoke;
 }
 
+/* Title */
 h1 {
   text-align: center;
   margin-top: 25px;
@@ -19,6 +20,7 @@ h1 {
   letter-spacing: 5px;
 }
 
+/* Loader */
 .loader {
   position: fixed;
   top: 0;
@@ -33,4 +35,27 @@ h1 {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+/* Image Container */
+.image-container {
+  margin: 10px 30%;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.image-container img {
+  width: 100%;
+  margin-top: 10px;
+}
+
+/* Media Query: Large Smartphone */
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 19px;
+    letter-spacing: 4px;
+  }
+  .image-container {
+    margin: 10px;
+  }
 }
